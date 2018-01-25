@@ -4,7 +4,7 @@
  *
  * STUDENT NAME:Darius Davis
  * ANDREW ID: dariusd
- * LAST UPDATE: 1:23am
+ * LAST UPDATE: 1/25/18 2:20am
  *
  * This file is an algorithm to solve the ece642rtle maze
  * using the left-hand rule. The code is intentionaly left obfuscated.
