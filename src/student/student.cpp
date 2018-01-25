@@ -65,47 +65,62 @@ bool moveTurtle(QPointF & pos_) {
       if (orientation == 3) ya += 1;
       else xa += 1;
     }
+
     b = bumped(xa, ya, xb, yb);
     e = atend(pos_.x(), pos_.y());
 
-    if (orientation == 0)
+    if (orientation == 0){
       if (state == 2) {
         orientation = 3;
         state = 1;
-      } else if (b) {
-      orientation = 1;
-      state = 0;
-    } else state = 2;
-    else if (orientation == 3)
+      } 
+      else if (b) {
+        orientation = 1;
+        state = 0;
+      } else state = 2;
+    }
+
+    else if (orientation == 3){
       if (state == 2) {
         orientation = 2;
         state = 1;
-      } else if (b) {
-      orientation = 0;
-      state = 0;
-    } else state = 2;
-    else if (orientation == 2)
+      } 
+      else if (b) {
+        orientation = 0;
+        state = 0;
+      } else state = 2;
+    }
+
+    else if (orientation == 2){
       if (state == 2) {
         orientation = 1;
         state = 1;
-      } else if (b) {
-      orientation = 3;
-      state = 0;
-    } else state = 2;
-    else if (orientation == 1)
+      } 
+      else if (b) {
+        orientation = 3;
+        state = 0;
+      } else state = 2;
+    }
+
+    else if (orientation == 1){
       if (state == 2) {
         orientation = 0;
         state = 1;
-      } else if (b) {
-      orientation = 2;
-      state = 0;
-    } else state = 2;
+      } 
+      else if (b) {
+        orientation = 2;
+        state = 0;
+      } else state = 2;
+    }
+
     else if (state == 5) {
       orientation = 3;
       state = 0;
-    } else if (b) {
-      orientation = 1;
-      state = 1;
+    } 
+      
+    else if (b) {
+        orientation = 1;
+        state = 1;
     } else state = 2;
 
 
