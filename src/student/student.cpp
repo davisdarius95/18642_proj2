@@ -68,7 +68,9 @@ bool moveTurtle(QPointF & pos_) {
 
     b = bumped(xa, ya, xb, yb);
     e = atend(pos_.x(), pos_.y());
-
+/*The if/else statements below make the turtle turn to the right of its relative orientation
+  and checks if it bumps into a wall. If it does bump into a wall, it turns the turtle to the
+  left of its initial orientation*/
     if (orientation == 0){
       if (state == 2) {
         orientation = 1;
