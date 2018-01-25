@@ -71,44 +71,44 @@ bool moveTurtle(QPointF & pos_) {
 
     if (orientation == 0){
       if (state == 2) {
-        orientation = 3;
+        orientation = 1;
         state = 1;
       } 
       else if (b) {
-        orientation = 1;
+        orientation = 3;
         state = 0;
       } else state = 2;
     }
 
     else if (orientation == 3){
       if (state == 2) {
-        orientation = 2;
+        orientation = 0;
         state = 1;
       } 
       else if (b) {
-        orientation = 0;
+        orientation = 2;
         state = 0;
       } else state = 2;
     }
 
     else if (orientation == 2){
       if (state == 2) {
-        orientation = 1;
+        orientation = 3;
         state = 1;
       } 
       else if (b) {
-        orientation = 3;
+        orientation = 1;
         state = 0;
       } else state = 2;
     }
 
     else if (orientation == 1){
       if (state == 2) {
-        orientation = 0;
+        orientation = 2;
         state = 1;
       } 
       else if (b) {
-        orientation = 2;
+        orientation = 0;
         state = 0;
       } else state = 2;
     }
